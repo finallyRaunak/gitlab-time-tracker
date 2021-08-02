@@ -1,0 +1,9 @@
+@font-face{font-family:Orbitron;font-style:normal;font-weight:700;src:url(chrome-extension://__MSG_@@extension_id__/assets/orbitron-regular.ttf)}
+#wh-gtt-title{display:table}
+#wh-gtt-time{color:#000;font-size:25px;font-family:'Orbitron','sans-serif';letter-spacing:7px;transform:translateX(-50%) translateY(-50%)}
+#wh-gtt-stop,#wh-gtt-go{cursor:pointer;min-width:60px;position:relative;display:inline-block;text-align:center;text-transform:uppercase;padding:2px 3px;margin:6px 5px;font-weight:600;transition:.5s}
+#wh-gtt-go{border:2px solid #3498db;color:#3498db;margin-left:0}
+#wh-gtt-go:hover{background-color:#258cd1;border:2px solid #4aa3df;color:#ecf0f1}
+#wh-gtt-stop{border:2px solid #e74c3c;color:#e74c3c}
+#wh-gtt-stop:hover::before{border:0}
+#wh-gtt-stop:hover{background-color:#e43725;border:2px solid #ea6153;color:#ecf0f1;cursor:pointer}

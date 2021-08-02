@@ -1,0 +1,34 @@
+{
+  "name": "Gitlab Time Tracker",
+  "version": "0.0.1",
+  "description": "Extension to track and log time into Gitlab Issue. Currently it is in beta.",
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "matches": [
+        "https://gitlab.com/*/-/issues/*"
+      ],
+      "css": [
+        "./assets/style.css"
+      ],
+      "js": [
+        "contentScript.js"
+      ],
+      "match_about_blank": false,
+      "run_at": "document_end"
+    }
+  ],
+  "icons": {
+    "16": "./assets/gitlab_icon.png",
+    "48": "./assets/gitlab_icon.png",
+    "128": "./assets/gitlab_icon.png"
+  },
+  "browser_action": {
+    "default_title": "gitlab Utility Tool"
+  },
+  "web_accessible_resources": [
+    "assets/gitlab_icon.png",
+    "assets/orbitron-regular.ttf",
+    "assets/style.css"
+  ]
+}
